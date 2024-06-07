@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin-top: 32px;
+}
+
+h1, thead th, tfoot td {
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+h1:after {
+    content: '';
+    margin-left: 24px;
+    flex: 1;
+    border-bottom: 8px dotted coral;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 32px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type=text] {
+    width: 50%;
+}
+
+input[type=tel] {
+    width: 30%;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid coral;
+    outline: 0px;
+}
+
+input, button {
+    padding: 8px;
+}
+
+button {
+    background-color: rgb(255, 219, 214);
+    border: none;
+    border-bottom: 2px solid rgb(255, 192, 184);
+    border-right: 2px solid rgb(255, 192, 184);
+}
+
+button:hover {
+    background-color: rgb(255, 192, 184);
+    cursor: pointer;
+}
+
+table {
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    border-bottom: 2px solid black;
+}
+
+thead th {
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+tbody td, tfoot td {
+    padding: 8px;
+}
+
+tfoot td {
+    background-color: rgba(255, 192, 184, 0.4);
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 192, 184, 0.2);
+}
+
+tbody tr {
+    transition: background-color 0.25s ease-in-out;
+}
+
+#statusbar {
+    width: 80%;
+    padding: 16px;
+    margin: 32px auto;
+    border-radius: 10px;
+    color: rgb(51, 51, 51);
+    background-color: rgb(255, 192, 184);
+}
+#statusbar:before {
+    content: '💡';
+    margin-right: 12px;
+}
+
+.doNotShow {
+    display: none;
+}
+
+.number {
+    font-family: "Roboto mono", monospace;
+    /* text-align: right; */
+}
